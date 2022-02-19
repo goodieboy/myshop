@@ -166,6 +166,9 @@ BRAINTREE_CONF = braintree.Configuration(
     BRAINTREE_PRIVATE_KEY
 )
 
+PAYSTACK_SECRET_KEY = os.environ.get('SECRET_KEY')
+PAYSTACK_PUBLIC_KEY = os.environ.get('PUBLIC_KEY')
+
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # EMAIL_HOST = 'smtp.gmail.com'
